@@ -1,11 +1,14 @@
-#builder
-FROM Node:20 as builder
+# builder
+FROM node:20-alpine AS builder
 
 WORKDIR /app
 
+COPY package*.json ./
+RUN npm install
+
 COPY . .
 
-RUN npm install 
+ENV HOST=0.0.0.0
 
 EXPOSE 3000
 

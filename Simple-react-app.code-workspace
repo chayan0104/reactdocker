@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "Simple-react-app",
+			"path": ".."
+		},
+		{
+			"name": "Python-app",
+			"path": "../../Python-app"
+		}
+	],
+	"settings": {}
+}
